@@ -46,7 +46,7 @@ runtime                        = "python3.12"
 # ✅ Environment variable for the bot token
   environment {
     variables = {
-      BOT_TOKEN = "8542664552:AAF6JfqMINlCzd8VyL8KLteAvp6VzlAK9gY"
+      BOT_TOKEN = "BOT_TOKEN"
     }
   }
 }

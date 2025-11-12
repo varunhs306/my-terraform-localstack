@@ -1,14 +1,18 @@
 # my-terraform-localstack
 
-This repository demonstrates how to use Terraform to deploy AWS Lambda and related resources locally using [LocalStack](https://github.com/localstack/localstack). After deployment, you can interact with a sample Telegram bot via [@Cl0udS0luti0n_bot](https://t.me/Cl0udS0luti0n_bot) and manually invoke the Lambda function for local testing.
+This repository demonstrates how to use Terraform to deploy AWS Lambda and related resources locally using [LocalStack](https://github.com/localstack/localstack). After deployment, you can interact wi[...]
 
 ## Prerequisites
 
 - [Docker](https://www.docker.com/get-started)
 - [Terraform](https://www.terraform.io/downloads)
 - [awslocal CLI](https://github.com/localstack/awscli-local) (`pip install awscli-local`)
+- **Telegram Bot Token:**  
+  Create a bot via [BotFather](https://t.me/BotFather) on Telegram to get your personal bot token.
 
-> **Note:** You do **not** need `git` or `docker compose` pre-installed for this specific flow.
+> **Note:**  
+> You do **not** need `git` or `docker compose` pre-installed for this specific flow.  
+> **Before proceeding, replace the placeholder bot token in `main.tf` with your own Telegram bot token.**
 
 ---
 
