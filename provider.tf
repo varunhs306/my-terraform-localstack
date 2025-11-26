@@ -14,6 +14,8 @@ provider "aws" {
     s3       = "http://localhost:4566"
     dynamodb = "http://localhost:4566"
     lambda  = "http://localhost:4566"
+    iam      = "http://localhost:4566"
+    sts      = "http://localhost:4566"
     
   }
    #setting for LocalStack S3 path-style URLs

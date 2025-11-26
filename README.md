@@ -10,8 +10,7 @@ This repository demonstrates how to use Terraform to deploy AWS Lambda and relat
 - **Telegram Bot Token:**  
   Create a bot via [BotFather](https://t.me/BotFather) on Telegram to get your personal bot token.
 
-> **Note:**  
-> You do **not** need `git` or `docker compose` pre-installed for this specific flow.  
+> **Note:**   
 > **Before proceeding, replace the placeholder bot token in `main.tf` with your own Telegram bot token.**
 
 ---
@@ -22,10 +21,13 @@ This repository demonstrates how to use Terraform to deploy AWS Lambda and relat
 
    Make sure Docker is running, then start LocalStack:
    ```bash
-   docker compose up -d
+   docker compose up
    ```
 
    LocalStack will now be running on your localhost (typically on port `4566`).
+   >**Note:** Change the image name in docker yml file if you don't have localstack pro
+
+   > ``` image: localstack/localstack-pro``` -> ```image: localstack/localstack```
 
 2. **Initialize and Apply Terraform**
 
@@ -38,22 +40,16 @@ This repository demonstrates how to use Terraform to deploy AWS Lambda and relat
 
 ---
 
-## Interact with the Telegram Bot
-
-You can now test and interact with the deployed Telegram bot at:  
-👉 [https://t.me/Cl0udS0luti0n_bot](https://t.me/Cl0udS0luti0n_bot)
-
 ### Bot Commands
 
 Type any of the commands below in the Telegram chat:
 
 ```
 Here are my commands:
-    /hello - Say hi
-    /echo <text> - I’ll repeat your text
-    /q - Get a random anime quote
-    /roll - roll for a surprise
-    /help - Show this help message
+      /save <your data> - Save new data
+      /list - View all your saved data
+      /delete <number> - Delete a specific entry
+      /help - Show this help message
 ```
 
 ---
@@ -78,8 +74,7 @@ awslocal lambda invoke --function-name telegrambotfunction response.json
    terraform init
    terraform apply
    ```
-3. Interact with the Telegram bot at <https://t.me/Cl0udS0luti0n_bot>
-4. Optionally, trigger the Lambda manually:
+3.Trigger the Lambda manually:
    ```
    awslocal lambda invoke --function-name telegrambotfunction response.json
    ```
@@ -87,6 +82,6 @@ awslocal lambda invoke --function-name telegrambotfunction response.json
 ---
 ## Screenshots
 Screenshots folder contains the proof as screenshots with individual task subfolders
-## License
-
-This project is licensed under the MIT License.
+```
+Task 3, Task 4,Task 5
+```
